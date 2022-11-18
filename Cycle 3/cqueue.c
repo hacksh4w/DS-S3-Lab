@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#define size 5
+#define size 25
 
 int cqueue[size];
 int front = -1, rear = -1;
