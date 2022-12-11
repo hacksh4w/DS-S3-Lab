@@ -10,21 +10,6 @@
  int addPoly(struct poly [],struct poly [],int ,int ,struct poly []);
  void displayPoly( struct poly [],int terms);
 
- int main() {
-	int t1,t2,t3;
-	t1=readPoly(p1);
-	printf(" \n First polynomial : ");
-	displayPoly(p1,t1);
-	t2=readPoly(p2);
-	printf(" \n Second polynomial : ");
-	displayPoly(p2,t2);
-
-	t3=addPoly(p1,p2,t1,t2,p3);
-	printf(" \n\n Resultant polynomial after addition : ");
-	displayPoly(p3,t3);
-	printf("\n");
-	return 0;
- }
  int readPoly(struct poly p[10])
  {
 	int t1,i;
@@ -98,3 +83,20 @@
 	printf("%d(x^%d)+",p[k].coeff,p[k].expo);
 	printf("%d(x^%d)",p[term-1].coeff,p[term-1].expo);
 }
+
+
+ int main() {
+	int t1,t2,t3;
+	t1=readPoly(p1);
+	printf(" \n First polynomial : ");
+	displayPoly(p1,t1);
+	t2=readPoly(p2);
+	printf(" \n Second polynomial : ");
+	displayPoly(p2,t2);
+
+	t3=addPoly(p1,p2,t1,t2,p3);
+	printf(" \n\n Resultant polynomial after addition : ");
+	displayPoly(p3,t3);
+	printf("\n");
+	return 0;
+ }
